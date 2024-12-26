@@ -21,10 +21,11 @@
   opacity: 1;
 }
 
-.Navigation p {
+.Navigation a {
   color: #ccc;
   margin-left: 15px;
   font-size: 14px;
+  text-decoration: none;
 }
 
 .nav-box {
@@ -49,6 +50,6 @@
   filter: saturate(100%);
 }
 
-.Navigation p:hover {
+.Navigation a:hover {
   color: plum;
 }

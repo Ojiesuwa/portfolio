@@ -1,7 +1,7 @@
 import React from "react";
 import "./AboutMe.css";
 
-const AboutMe = ({ scroll }) => {
+const AboutMe = ({ scroll = 500 }) => {
   return (
     <div className="AboutMe">
       <div

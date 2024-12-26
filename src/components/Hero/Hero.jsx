@@ -7,10 +7,23 @@ const Hero = () => {
     <div className="Hero">
       <div className="header drop-animation">
         <div className="drop-down-container">
-          <i className="fa-brands fa-linkedin"></i>
+          <i
+            className="fa-brands fa-linkedin"
+            onClick={() => {
+              window.open("https://www.linkedin.com/in/ojiesuwa", "_blank");
+            }}
+          ></i>
         </div>
         <div className="drop-down-container">
-          <i className="fa-brands fa-instagram"></i>
+          <i
+            className="fa-brands fa-instagram"
+            onClick={() => {
+              window.open(
+                "https://www.instagram.com/oluwarotimitemidire?igsh=MWNzM3o4N2k2ZWt3OQ==",
+                "_blank"
+              );
+            }}
+          ></i>
         </div>
       </div>
       <img src={MyImage} alt="" className="fade up" />
@@ -20,7 +33,12 @@ const Hero = () => {
           <div>
             <div className="contact-container">
               <p className="developer-title fade-right">MERN Stack Developer</p>
-              <div className="get-in-touch fade-left">
+              <div
+                className="get-in-touch fade-left"
+                onClick={() => {
+                  window.open("mailto:oluwarotimiadeola@gmail.com", "_blank");
+                }}
+              >
                 <p>Get in touch</p>
                 <i className="fa-light fa-arrow-right"></i>
               </div>

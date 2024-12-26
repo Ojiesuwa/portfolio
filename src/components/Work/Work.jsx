@@ -1,31 +1,45 @@
 import React from "react";
 import "./Work.css";
 
-const Work = ({ scroll }) => {
+const Work = ({ scroll = 1000 }) => {
   return (
     <div className="Work">
       <div
         className={`about-card ${
-          scroll < 1600 && scroll > 300 ? "opac-1" : "opac-0"
+          scroll < 1300 && scroll > 720 ? "opac-1" : "opac-0"
         }`}
       >
         <div className="text-cont">
           <p
             className={`left-skew ${
-              scroll < 1660 && scroll > 400 ? "opac-1" : "left-hide opac-0"
+              scroll < 1300 && scroll > 800 ? "opac-1" : "down-hide opac-0"
             }`}
           >
             I have worked with:
           </p>
         </div>
         <div className="text-cont">
-          <p
+          <div
             className={`right-skew ${
-              scroll < 1660 && scroll > 400 ? "opac-1" : "right-hide opac-0"
+              scroll < 1300 && scroll > 800 ? "opac-1" : " opac-0"
             }`}
-          ></p>
+          >
+            <Item work={"Startups"} />
+            <Item work={"CEOs"} />
+            <Item work={"Hackathon Projects"} />
+            <Item work={"Teams"} />
+          </div>
         </div>
       </div>
+    </div>
+  );
+};
+
+const Item = ({ work }) => {
+  return (
+    <div className="item">
+      <i className="fa-thin fa-square-arrow-up-right"></i>
+      <p>{work}</p>
     </div>
   );
 };

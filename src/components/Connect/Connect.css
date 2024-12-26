@@ -1,0 +1,33 @@
+.Connect {
+  width: 100%;
+  height: 100svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Connect p {
+  font-size: 60px;
+  text-align: center;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-top: 20px;
+  opacity: 0.6;
+}
+
+.socials i {
+  font-size: 35px;
+}
+
+.socials i:hover {
+  opacity: 1;
+  color: plum;
+  cursor: pointer;
+}
+@media screen and (max-width: 700px) {
+}

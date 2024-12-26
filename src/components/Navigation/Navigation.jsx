@@ -8,7 +8,7 @@ const Navigation = () => {
       <div className="nav-box">
         <img src={MyImage} alt="" />
       </div>
-      <p>Projects</p>
+      <a href="#project">Projects</a>
     </div>
   );
 };

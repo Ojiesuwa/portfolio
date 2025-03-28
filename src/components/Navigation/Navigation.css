@@ -1,0 +1,55 @@
+.Navigation {
+  position: fixed;
+  top: 50px;
+  left: 40px;
+  background-color: #2f2f2f;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  z-index: 300;
+  transition: all 0.5s ease;
+  overflow: hidden;
+  cursor: pointer;
+  opacity: 0.2;
+}
+
+.Navigation:hover {
+  width: 130px;
+  opacity: 1;
+}
+
+.Navigation a {
+  color: #ccc;
+  margin-left: 15px;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.nav-box {
+  width: 30px;
+  background-color: #fff;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.Navigation img {
+  height: 25px;
+  margin-left: 3px;
+  filter: saturate(0);
+}
+
+.Navigation img:hover {
+  filter: saturate(100%);
+}
+
+.Navigation a:hover {
+  color: plum;
+}

@@ -1,0 +1,159 @@
+.Hero {
+  height: 100svh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  padding: 0 50px;
+}
+
+.Hero img {
+  height: 400px;
+  margin-bottom: -60px;
+  filter: saturate(40%);
+}
+
+.Hero .header {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  padding-right: 90px;
+  align-items: start;
+  position: absolute;
+  top: 0;
+  gap: 30px;
+}
+
+.drop-down-container {
+  width: 60px;
+  height: 80px;
+  background-color: #1f1f1f;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  justify-content: end;
+  flex-direction: column;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  margin-top: -20px;
+}
+
+.drop-down-container:hover {
+  margin-top: -10px;
+}
+
+.drop-down-container:hover i {
+  color: plum;
+}
+.drop-down-container i {
+  font-size: 25px;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.hero-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #1f1f1f;
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  height: 220px;
+  box-shadow: -5px -5px 10px rgba(0, 0, 0, 0.6);
+}
+
+.developer-title {
+  font-size: 22px;
+  margin-left: 10px;
+  color: plum;
+  font-family: "Work Sans";
+  font-weight: 600;
+}
+
+.inner-hero-wrapper {
+}
+
+.my-name {
+  font-size: 7vw;
+  font-weight: 800;
+  color: transparent;
+  background: linear-gradient(to top, #888, #fff);
+  background-clip: text;
+  margin-top: -25px;
+}
+
+.name-text {
+  font-size: 40px;
+  font-weight: 700;
+  color: plum;
+  margin-bottom: -20px;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -15px;
+}
+
+.get-in-touch {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border: 1px solid #eee;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+
+.get-in-touch:hover {
+  cursor: pointer;
+  border-color: plum;
+}
+
+.get-in-touch:hover > * {
+  color: plum;
+}
+
+@media screen and (max-width: 700px) {
+  .Hero img {
+    margin-left: 20px;
+  }
+  .my-name {
+    /* font-size: 25px; */
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .developer-title {
+    margin-bottom: 20px;
+  }
+  .Hero .header {
+    padding-right: 10px;
+    gap: 10px;
+  }
+
+  .Hero {
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .hero-wrapper {
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+
+  .inner-hero-wrapper {
+    width: 100%;
+    height: fit-content;
+  }
+
+  .contact-container {
+    flex-direction: column;
+  }
+}
